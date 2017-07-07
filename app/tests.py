@@ -10,7 +10,7 @@ class TestCase(unittest.TestCase):
     def test_get_mainpage(self):
         page = self.app.post("/", data=dict(name="Moby Dock"))
         assert page.status_code == 200
-        assert 'Hello' in str(page.data)
+        assert 'Hi' in str(page.data)
         assert 'Moby Dock' in str(page.data)
 
     def test_html_escaping(self):
