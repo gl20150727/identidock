@@ -15,3 +15,10 @@ dnmonster:
 
 redis:
   image: redis:3.0
+
+logspout:
+  image: amouat/logspout-logstash
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock
+  ports:
+    - "8000:80"
