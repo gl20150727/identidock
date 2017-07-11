@@ -37,7 +37,7 @@ logstash:
   command: -f /etc/logstash.conf
 
 elasticsearch:
-  image: elasticsearch:1.7
+  image: elasticsearch:2.4.5
   environment:
     LOGSPOUT: ignore
 
